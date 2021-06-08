@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 1.1rem;
+}
+.navbar ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    border-bottom: 5px solid rgb(247, 247, 13);
+    transition: all .5s ease;
+    color: rgb(247, 247, 13);
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('pic1.jpg') no-repeat center center/cover;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.heading{
+    color: white;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+}
+
+/* Skills Section */
+#skills{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#skills h1{
+    margin: 60px;
+}
+.columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+}
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 70px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.box:hover{
+    box-shadow: 0 10px 10px 5px yellowgreen;
+    transition: all .8s ease;
+}
+
+.box h2{
+    color: yellowgreen;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.box p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.circle-wrap {
+    margin: 3px auto;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+  
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+}
+  
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+  
+.circle-wrap .circle .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color:yellowgreen;
+}
+  
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+    animation: fill ease-in-out 3s;
+    /* transform: rotate(126deg); */
+}
+  
+/* @keyframes fill {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(100deg);
+    }
+} */
+  
+.circle-wrap .inside-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background:white;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 100%;
+    background-color: rgba(51, 49, 49, 0.801);
+}
+#about h1{
+    color: black;
+    margin: 55px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about img{
+    width: 500px;
+    height: 400px;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.about img:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px black;
+    transition: all .5s ease-in-out;
+}
+
+.name{
+    padding: 10px;
+}
+.name h2{
+    font-size: 3rem;
+    margin: 0 10px 20px;
+}
+.name p{
+    font-size: 2rem;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.name a:hover{
+    cursor: pointer;
+    color: black;
+    text-shadow: 0 0 3px yellowgreen;
+}
+
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000dc;
+}
+#contact h1{
+    margin: 50px ;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 15px 20px;
+    margin: 15px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+#message{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 20px;
+}
+#submit{
+    padding: 15px 20px;
+    margin: 7px;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+/*getintouch*/
+#getintouch{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: .9;
+}
+
+.h1{
+    color: white;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    transform: scale(1,1.3);
+    margin: 10px 0 40px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.getintouch{
+    width: 100%;
+}
+
+.content .row{
+    display: flex;
+    height: 65px; 
+}
+
+.content .row .info{
+    margin-left: 30px;
+}
+
+.content .row i{
+    margin-top: 10px;
+    font-size: 25px;
+    color: grey;
+}
+
+.content .row p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.content .row i:hover{
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+.content .row .info:hover{
+    cursor: pointer;
+    color: yellowgreen;
+}
+
+.social{
+    text-align: center;
+}
+
+.social i{
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.content .social i.insta{
+    color: rgb(238, 87, 124);
+}
+
+.content .social i.linkedin{
+    color: rgb(47, 57, 199);
+}
+
+.content .social i.facebook{
+    color: rgb(81, 89, 211);
+}
+
+
+/*footer*/
+footer{
+    text-align: center;
+    background:#000000dc;
+    padding: 20px 23px;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+}
+
+footer p{
+    margin-bottom: 8px;
+}
+
+footer span{
+    color: yellowgreen;
+}
