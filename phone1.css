@@ -1,0 +1,122 @@
+/* Navbar */
+.navbar{
+    height: 50px;
+}
+
+.navbar ul li{
+    font-size: 1rem;
+}
+
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar ul{
+    padding: 0;
+}
+
+.navbar ul li{
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+/* Headings */
+.heading{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+/*skills section*/
+#skills h1{
+    margin: 10px;
+    margin-top: 50px;
+}
+
+/* About Section */
+.about{
+    flex-direction: column;
+}
+.about h1{
+    text-align: center;
+}
+
+.name p{
+    font-size: 20px;
+}
+
+.name h2{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#about h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.about img{
+    width: 200px;
+    height: 190px;
+    padding: 0px;
+    margin: auto;
+}
+/* Message box */
+#message{
+    width: 40%;
+    height: 200px;
+}
+
+/* Boxes */
+.box{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.box h2{
+    color: yellowgreen;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.box p{
+    color: white;
+    font-size: .8rem;
+}
+
+/*contact*/
+#submit{
+    padding-top: 12px;
+    padding-left: 15px;
+    border-radius: 15px;
+    width: 20%;
+    height: 40px;
+}
+
+#contact h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/*getintouch*/
+#getintouch .getintouch .h1{
+    padding-top: 20px;
+    font-size: 1.3rem;
+}
+
+.content .row i{
+    margin-top: 10px;
+    font-size: 20px;
+    color: grey;
+}
+
+.content .row p{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
