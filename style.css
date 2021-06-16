@@ -216,6 +216,11 @@ html{
     text-shadow: 0 0 3px yellowgreen;
 }
 
+.name span{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Contact Section */
 #contact{
     display: flex;
